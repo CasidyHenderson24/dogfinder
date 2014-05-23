@@ -4,23 +4,29 @@ from app import app
 from flask import render_template 
 
 @app. route('/')
+@app. route('/home')
 
 @app.route('/index')
 def index():
-	return render_template('petdraft.html')
+	return render_template('home.html')
 
-@app.route('/first')
-def first():
-	return render_template('first.html')
-
-
-
-@app.route('/second')
-def second():
-	return render_template('second.html')
+@app.route('/petfinder')
+def petfinder():
+	return render_template('petfinder.html')
 
 
-@app.route('/third')
-def third():
-	return render_template('third.html')
+
+
+
+@app.route('/petid')
+def petid():
+	return render_template('petid.html')
+
+@app.route('/notifications')
+def notifications():
+	return render_template('notifications.html')
+
+@app.route('/petowner')
+def petowner():
+	return render_template('petowner.html')
 
