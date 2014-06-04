@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='') }}">
+</head>
+
+	<body>
+
+		<h1>"hello! these are the recent posts!"</h1>
+		<h2></h2> 
+		<h3><h3/>
+		
+		{% for post in posts %}
+		<p><p> {{post.tittle}} - Posted by {{ post.author}}</p>
+		<p>{{post.content}}</p></p>
+		<br>
+		{% endof %}
+
+	</body> 
+</html>

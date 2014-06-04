@@ -1,0 +1,44 @@
+#add_user.html
+ <html>
+
+
+
+<head> 
+
+
+
+
+</head>
+
+
+
+
+ <body>
+
+<h1>Add a new user by filling out this form:</h1>
+	<form action="" method="post" name="newuser">
+		{{form.hidden_tag()}}
+		First name:{{ form.firstname(size=30) }}
+		<br>Last name:{{ form.lastname(size=30 )}}
+		<br>User name:{{ form.username(size=30 )}}
+		<br><input type="submit" value="I'm done! (add this user)">
+	</form>
+
+		
+
+
+
+
+
+
+
+
+ </body>
+
+
+
+
+
+
+
+ </html> 
